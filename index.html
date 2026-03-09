@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SAN LYHAK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: #16213e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        h2 {
+            text-align: center;
+            color: #e94560;
+            margin-top: 0;
+        }
+        .section-title {
+            margin-top: 20px;
+            border-left: 4px solid #e94560;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .item {
+            background: #0f3460;
+            padding: 15px 5px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item:hover {
+            border-color: #e94560;
+            transform: translateY(-5px);
+        }
+        .item img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+            filter: brightness(0) invert(1); /* makes icons white to fit dark theme, optional */
+        }
+        /* remove filter for colored icons - let's use original colors */
+        .item img {
+            filter: none; /* keep original colors */
+        }
+        .platform-name {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .price {
+            display: block;
+            color: #4cd137;
+            font-weight: bold;
+            margin-top: 4px;
+            font-size: 13px;
+            word-break: break-word;
+        }
+        .buy-btn {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #e94560;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff2e63;
+        }
+        a.buy-btn {
+            text-decoration: none;
+            color: white;
+        }
+        /* Adjust grid for smaller screens */
+        @media (max-width: 400px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Web developer</h2>
+    
+    <!-- Section: អំពីព័ត៌មានរបស់ខ្ញុំ -->
+    <div class="section-title">អំពីព័ត៌មានរបស់ខ្ញុំ</div>
+    <div class="grid">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/TH3Cencee" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%234267B2\' d=\'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">Facebook</span>
+            <span class="price">Kali Nethunter</span>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@th3cen_cee?_r=1&_t=ZS-94XQW1Binbg" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%23000000\' d=\'M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.1 0 .2.02.3.05V8.76a6.57 6.57 0 0 0-1.1-.05 6.35 6.35 0 0 0-4.52 10.86A6.35 6.35 0 0 0 14 14.84V9.67a6.35 6.35 0 0 0 3.77 1.26v-3.3c-.2 0-.4-.02-.6-.05v-.01c-.17-.03-.33-.06-.48-.1v.01Z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">TikTok</span>
+            <span class="price">th3cen_cee</span>
+        </a>
+        <!-- Telegram (first) -->
+        <a href="https://t.me/TH3Cen_cee" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%2326A5E4\' d=\'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.01-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.79.035-.216.325-.437.893-.663 3.498-1.524 5.83-2.53 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">Telegram</span>
+            <span class="price">ហាក់</span>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/th3cencee?igsh=YzJnMWRoM2xuaHBr" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%23E4405F\' d=\'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">Instagram</span>
+            <span class="price">Lyhak</span>
+        </a>
+    </div>
+
+    <!-- Section: ទំនាក់ទំនងបន្ថែម -->
+    <div class="section-title">ទំនាក់ទំនងបន្ថែម</div>
+    <div class="grid">
+        <!-- Telegram (TH3Cen_cee) -->
+        <a href="https://t.me/TH3Cen_cee" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%2326A5E4\' d=\'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.01-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.79.035-.216.325-.437.893-.663 3.498-1.524 5.83-2.53 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">Telegram</span>
+            <span class="price">t.me/TH3Cen_cee</span>
+        </a>
+        <!-- Telegram (Faking007) -->
+        <a href="https://t.me/Faking007" target="_blank" class="item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\'%3E%3Cpath fill=\'%2326A5E4\' d=\'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.01-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.79.035-.216.325-.437.893-.663 3.498-1.524 5.83-2.53 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z\'/%3E%3C/svg%3E';">
+            <span class="platform-name">Telegram</span>
+            <span class="price">t.me/Faking007</span>
+        </a>
+    </div>
+
+    <!-- Channel Telegram button -->
+    <a href="https://t.me/hakk_digital_stores" target="_blank" class="buy-btn">Channel Telegram</a>
+</div>
+
+</body>
+</html>
